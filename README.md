@@ -1,6 +1,6 @@
-# Shipment Tracking Automation
+# Logistics Tracking Automation
 
-An automation pipeline built for a logistics planning team to track inbound shipments. It consolidates data from multiple sources daily (carrier websites/APIs, customs broker reports, warehouse inbound schedules, etc.) into a single PO tracking spreadsheet, giving planners real-time visibility into shipment status, estimated arrival times, and inbound priority.
+An automation pipeline built for a logistics planning team to track open purchase orders. It consolidates data from multiple sources daily (carrier websites/APIs, customs broker reports, warehouse inbound schedules, etc.) into a single PO tracking spreadsheet, giving planners real-time visibility into shipment status, estimated arrival times, and inbound priority.
 
 > This project originated as an internal company logistics tracking system and is published here with company authorization as a portfolio piece. All credentials, API keys, internal network paths, and real names have been removed or replaced with environment variables / generic placeholders. The program logic itself is unchanged.
 

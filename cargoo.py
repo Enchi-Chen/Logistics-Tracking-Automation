@@ -9,7 +9,6 @@ from datetime import datetime
 
 from support_module import support_function
 
-#提醒: 運行時不要把滑鼠移動到視窗上面，否則可能會下載失敗
 CARGOO_WEBSITE = "https://app.cargoo.com/login"
 EMAIL = os.getenv("CARGOO_EMAIL", "")
 PASSWORD = os.getenv("CARGOO_PASSWORD", "")
