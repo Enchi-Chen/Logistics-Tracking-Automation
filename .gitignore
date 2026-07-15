@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / secrets
+.env
+.env.*
+*.local
+
+# Data files produced/consumed by the pipeline
+*.xlsx
+*.csv
+
+# OS / editor
+.DS_Store
+.vscode/
