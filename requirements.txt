@@ -1,0 +1,17 @@
+IPython
+pytz
+dateutil
+requests
+bs4
+pandas
+openpyxl
+xlwings
+playwright
+pyparsing
+win32com
+urllib3
+tornado
+traitlets
+typing_extensions
+idna
+datetime
