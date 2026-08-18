@@ -11,17 +11,27 @@ A personal project: an automation pipeline I independently designed and built fo
 
 ## Architecture
 
-A main script (`Main.py`) runs seven core modules in sequence, plus five carrier-tracking submodules and two shared utility modules:
+A main script (`Main.py`) runs seven core modules (kept in `main_module/`) in sequence, plus five carrier-tracking submodules and two shared utility modules:
 
 | # | Module | Description |
 |---|--------|-------------|
-| 1 | `sales_data_sync.py` | Syncs the latest PO sales data into the master sheet |
-| 2 | `cargoo.py` | Uses browser automation (Playwright) to log into the Cargoo platform and download/import shipment reports |
-| 3 | `carrier_tracking_main.py` | Calls five carrier-specific modules to fetch real-time shipment status, cross-referencing the Cargoo data |
-| 4 | `customs.py` | Consolidates reports from multiple customs brokers to get clearance progress and ETA |
-| 5 | `warehouse.py` | Integrates warehouse inbound schedules to project next-day inbound plans |
-| 6 | `compare_last_file.py` | Compares the current and previous report versions to track ETA change history |
-| 7 | `sort_query_sap.py` | Refreshes Excel Power Query and SAP-linked data used for inbound priority calculations |
+| 1 | `main_module/sales_data_sync.py` | Syncs the latest PO sales data into the master sheet |
+| 2 | `main_module/cargoo.py` | Uses browser automation (Playwright) to log into the Cargoo platform and download/import shipment reports |
+| 3 | `main_module/carrier_tracking_main.py` | Calls five carrier-specific modules to fetch real-time shipment status, cross-referencing the Cargoo data |
+| 4 | `main_module/customs.py` | Consolidates reports from multiple customs brokers to get clearance progress and ETA |
+| 5 | `main_module/warehouse.py` | Integrates warehouse inbound schedules to project next-day inbound plans |
+| 6 | `main_module/compare_last_file.py` | Compares the current and previous report versions to track ETA change history |
+| 7 | `main_module/sort_query_sap.py` | Refreshes Excel Power Query and SAP-linked data used for inbound priority calculations |
+
+### Project structure
+
+```
+github-ready/
+├── Main.py                  # entry point — run this
+├── main_module/              # the seven core modules listed above
+├── carrier_tracking/         # carrier-specific submodules
+└── support_module/           # shared utility modules
+```
 
 ### Carrier tracking submodules (`carrier_tracking/`)
 
