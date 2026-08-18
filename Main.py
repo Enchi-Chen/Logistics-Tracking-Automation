@@ -1,11 +1,11 @@
-import sales_data_sync
-import cargoo
-import customs
-import carrier_tracking_main as carrier_tracking_main
+from main_module import sales_data_sync
+from main_module import cargoo
+from main_module import customs
+from main_module import carrier_tracking_main
 from support_module import support_function
-import warehouse
-import compare_last_file
-import sort_query_sap
+from main_module import warehouse
+from main_module import compare_last_file
+from main_module import sort_query_sap
 from datetime import datetime
 
 import os
