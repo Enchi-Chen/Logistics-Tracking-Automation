@@ -81,4 +81,4 @@ A full run takes about 16 minutes; the carrier tracking module (`carrier_trackin
 
 ## Disclaimer
 
-This project is shared as a technical portfolio piece. Third-party service names mentioned in the code (Cargoo, Maersk, customs brokers, etc.) are included only to describe the data sources being integrated and do not imply any business partnership. All original sensitive information was removed prior to publicati
+This project is shared as a technical portfolio piece. Third-party service names mentioned in the code (Cargoo, Maersk, customs brokers, etc.) are included only to describe the data sources being integrated and do not imply any business partnership. All original sensitive information was removed prior to publication
